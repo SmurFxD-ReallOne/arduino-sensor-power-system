@@ -52,11 +52,11 @@ This repository contains two professional Arduino projects designed for power ma
 #### Pin Configuration
 | Component | Arduino Pin | Description |
 |-----------|-------------|-------------|
-| PIR Sensor | D2 | Motion detection input |
-| Push Button | D3 | Manual control input |
-| MOSFET Gate | D4 | Power control output |
-| Green LED | D5 | Power indicator |
-| Blue LED | D6 | Status indicator |
+| Push Button | D2 | Manual control input |
+| MOSFET Gate | D3 | Power control output |
+| Green LED | D4 | Power indicator |
+| Blue LED | D5 | Status indicator |
+| PIR Sensor | D7 | Motion detection input |
 
 #### How It Works
 1. **Power Off State**: System starts with power off
@@ -126,26 +126,24 @@ This repository contains two professional Arduino projects designed for power ma
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/arduino-sensor-power-system.git
+   git clone https://github.com/SmurFxD-ReallOne/arduino-sensor-power-system.git
    cd arduino-sensor-power-system
    ```
 
 2. **Open Arduino IDE**
 
 3. **Upload Component 1**
-   - Open `component1-latching-switch/latching_switch.ino`
-   - Connect components according to circuit diagram
+   - Open `latching_switch.ino`
+   - Connect components according to pin configuration
    - Upload to Arduino
 
 4. **Upload Component 2**
-   - Open `component2-sensor-system/sensor_system.ino`
-   - Connect components according to circuit diagram
+   - Open `sensor_system.ino`
+   - Connect components according to pin configuration
    - Upload to Arduino
 
 ### Circuit Setup
-Follow the detailed circuit diagrams provided in each component folder:
-- `component1-latching-switch/circuit_diagram.txt`
-- `component2-sensor-system/circuit_diagram.txt`
+Follow the pin configurations provided in each component section above. All components are connected directly to the Arduino board according to the specified pin assignments.
 
 ---
 
@@ -154,12 +152,10 @@ Follow the detailed circuit diagrams provided in each component folder:
 ```
 arduino-sensor-power-system/
 ├── README.md
-├── component1-latching-switch/
-│   ├── latching_switch.ino
-│   └── circuit_diagram.txt
-└── component2-sensor-system/
-    ├── sensor_system.ino
-    └── circuit_diagram.txt
+├── latching_switch.ino
+├── sensor_system.ino
+├── demo-circuit.gif
+└── demo-sensors.gif
 ```
 
 ---
@@ -219,10 +215,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Musaad Alghashmari**
 
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **Email**: your.email@example.com
-- **LinkedIn**: [Musaad Alghashmari](https://linkedin.com/in/musaad-alghashmari)
-
 ---
 
 ## Acknowledgments
@@ -238,7 +230,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | Component | Status | Last Updated |
 |-----------|--------|--------------|
 | Latching Power Switch | Complete | 2024 |
-| Sensor System | Complete | 2024 |
+| Analog and Digital sensors | Complete | 2024 |
 
 ---
 
